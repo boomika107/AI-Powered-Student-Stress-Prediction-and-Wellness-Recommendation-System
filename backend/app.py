@@ -2,14 +2,13 @@ from flask import Flask, render_template, request
 import pandas as pd
 import numpy as np
 import joblib
-import os
+import sqlite3
+from datetime import datetime
+from flask import jsonify
 
 app = Flask(__name__)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "stress_model.pkl")
-
-model = joblib.load(MODEL_PATH)
+model = joblib.load("stress_model.pkl")
 
 
 # ==========================
