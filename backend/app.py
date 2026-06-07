@@ -1,13 +1,15 @@
-from flask import Flask, request, jsonify, render_template
-import joblib
+from flask import Flask, render_template, request
+import pandas as pd
 import numpy as np
-import sqlite3
-from datetime import datetime
+import joblib
+import os
 
 app = Flask(__name__)
 
-# Load trained model
-model = joblib.load("stress_model.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "stress_model.pkl")
+
+model = joblib.load(MODEL_PATH)
 
 
 # ==========================
