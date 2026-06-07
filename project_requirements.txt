@@ -1,0 +1,17 @@
+Project Title:
+AI-Powered Student Stress Prediction and Wellness Recommendation System
+
+Problem Statement:
+Students experience stress due to academic workload, examinations, sleep patterns, and lifestyle factors. Identifying stress levels early can help improve mental well-being and academic performance.
+
+Objective:
+To predict student stress levels using machine learning and provide personalized wellness recommendations.
+
+Expected Users:
+- College Students
+- School Students
+- Academic Counselors
+
+Expected Output:
+- Stress Level Prediction (Low, Medium, High)
+- Personalized Wellness Recommendations
